@@ -9,8 +9,17 @@ html,body{
     width: 100%;
 }
 
-.page1 video{
+#page1 video{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
+}
+
+#page1-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
 }
