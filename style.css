@@ -37,6 +37,7 @@ html,body{
     align-items: center;
     justify-content: center;
     z-index: 9;
+    transform: translate(-50%, -50%);
 }
 #cursor h5{
     font-size: 1vw;
@@ -54,24 +55,13 @@ html,body{
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.732);
+    /* background-color: rgba(0, 0, 0, 0.732); */
     color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     z-index: 10;
-}
-
-#page1-content h1{
-    font-family: rene;
-    font-size: 27vw;
-    font-weight: 100;
-}
-
-#page1-content h1 span{
-    font-family: rene;
-    font-weight: 100;
 }
 
 nav{
@@ -89,4 +79,119 @@ nav h3{
 nav h4{
     font-size: 1.4vw;
     font-weight: 200;
+}
+
+#page1-content h1{
+    font-family: rene;
+    font-size: 27vw;
+    font-weight: 100;
+}
+
+#page1-content h1 span{
+    font-family: rene;
+    font-weight: 100;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #FAF8F3;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+#page2-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+
+#page2-top h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 26%;
+    /* background-color: green; */
+}
+
+#page2-top h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.elem{
+    overflow: hidden;
+}
+
+.elem h1{
+    /* background-color: blue; */
+    font-size: 4.2vw;
+    font-weight: 500;
+}
+
+#page3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #dadada;
+    padding: 3vw;
+}
+
+#page3-top{
+    background-color: green;
+    text-align: center;
+}
+#page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#page3-top h4 span{
+    font-size: 0.7vw;
+    background-color: black;
+    color: white;
+    padding: 3.5px 9px;
+    border-radius: 10px;
+    text-align: center;
+}
+#page3-top h2{
+    font-size: 4vw;
+    font-weight: 500;
+}
+#page3-elems{
+    height: 70vh;
+    width: 100%;
+    background-color: green;
+    margin-top: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page3-elems .box{
+    height: 100%;
+    width: 32.5%;
+    background-color: blue;
+    position: relative;
+}
+#page3-elems .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elems .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: center;
+    transition: all ease 1s;
+}
+#page3-elems .box:hover img{
+    opacity: 0;
 }
