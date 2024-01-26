@@ -79,3 +79,22 @@ function page2Animation(){
     })
 }
 page2Animation();
+
+function page4Animation(){
+    gsap.from("#page4-elem h1", {
+        y:120,
+        stagger: 0.2,
+        duration:1,
+        opacity:0,
+        scrollTrigger: {
+            trigger: "#page4",
+            // scroller: "body",
+            scroller: "#main",
+            start: "top 47%",
+            end: "top 40%",
+            // markers: true,
+            scrub: 2
+        }
+    })
+}
+page4Animation();
