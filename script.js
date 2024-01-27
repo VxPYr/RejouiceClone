@@ -98,3 +98,70 @@ function page4Animation(){
     })
 }
 page4Animation();
+
+function page6Animation(){
+    gsap.from("#page6-elem h1", {
+        y:120,
+        stagger: 0.2,
+        duration:1,
+        opacity:0,
+        scrollTrigger: {
+            trigger: "#page6",
+            // scroller: "body",
+            scroller: "#main",
+            start: "top 47%",
+            end: "top 40%",
+            // markers: true,
+            scrub: 2
+        }
+    })
+}
+page6Animation();
+
+function sliderAnimate(){
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+  });
+}
+sliderAnimate();
+
+var tl = gsap.timeline();
+
+tl.from("#loader h3", {
+    x:40,
+    opacity:0,
+    duration:1,
+    stagger: 0.1
+})
+tl.to("#loader h3", {
+    opacity: 0,
+    x: -10,
+    duration: 1,
+    stagger: 0.1
+})
+tl.to("#loader", {
+    opacity: 0
+})
+tl.from("#page1-content h1 span", {
+    y: 100,
+    opacity:0,
+    stagger: 0.1,
+    delay: -0.5
+})
+tl.to("#loader", {
+    display: "none"
+})
