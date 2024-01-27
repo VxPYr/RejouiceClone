@@ -264,6 +264,23 @@ nav h4{
     justify-content: center;
     /* background-color: black; */
 }
+#page5-cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    position: fixed;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+    transform: translate(-50%, -50%);
+}
+#page5-cursor h5{
+    color: white;
+    font-size: 1vw;
+    font-weight: 200;
+}
 #page5 video{
     height: 115%;
 }

@@ -61,6 +61,34 @@ function cursorEffects(){
 }
 cursorEffects();
 
+function page5CursorEffects(){
+
+    var page5 = document.querySelector("#page5");
+    var cursor = document.querySelector("#page5-cursor")
+
+    page5.addEventListener("mousemove", function(dets){
+        gsap.to("#page5-cursor", {
+            x: dets.x,
+            y: dets.y,
+        })
+    })
+
+    page5.addEventListener("mouseenter", function(){
+        gsap.to(cursor, {
+            scale:1,
+            opacity:1
+        })
+    })
+
+    page5.addEventListener("mouseleave", function(){
+        gsap.to(cursor, {
+            scale:0,
+            opacity:0
+        })
+    })
+}
+page5CursorEffects();
+
 function page2Animation(){
     gsap.from(".elem h1", {
         y:120,
